@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplegable personalizado - Tortugas</title>
+    <meta name="description" content="Desplegable personalizado de tortugas">
+    <meta name="keywords" content="tortuga, JavaScript, HTML, CSS">
+    <meta name="author" content="Nayrelis Rumbos">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <h1>Conoce las tortugas</h1>
+        <p>Selecciona un tipo de tortuga para conocer más:</p>
+
+        <section class="desplegable">
+            <button class="botonDesplegable" id="botonDesplegable" type="button">
+                <span id="textoBoton">Selecciona una tortuga</span>
+                <span class="flecha">▼</span>
+            </button>
+
+            <!-- hidden hace que la lista esté oculta al inicio -->
+            <ul class="listaOpciones" id="listaOpciones" hidden>
+                <li><button class="opcion" type="button"
+                        data-descripcion="La tortuga verde es una especie marina que se alimenta de pastos marinos y algas.">Tortuga
+                        verde</button></li>
+                <li><button class="opcion" type="button"
+                        data-descripcion="La tortuga carey es marina, reconocida por su pico puntiagudo y su caparazón con placas superpuestas.">Tortuga
+                        carey</button></li>
+                <li><button class="opcion" type="button"
+                        data-descripcion="La tortuga laúd es la tortuga marina más grande y tiene un caparazón flexible.">Tortuga
+                        laúd</button></li>
+                <li><button class="opcion" type="button"
+                        data-descripcion="La tortuga caguama tiene una cabeza grande y mandíbulas fuertes.">Tortuga
+                        caguama</button></li>
+                <li><button class="opcion" type="button"
+                        data-descripcion="La tortuga morrocoy es terrestre y vive en zonas cálidas de América del Sur.">Tortuga
+                        morrocoy</button></li>
+            </ul>
+        </section>
+
+        <section class="informacion">
+            <h2>Información</h2>
+            <p id="mensaje">Aquí aparecerá información sobre la tortuga que selecciones.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

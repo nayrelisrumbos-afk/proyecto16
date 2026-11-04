@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2e1f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+h1 {
+    color: #0b2798;
+    font-size: 22px;
+}
+
+.desplegable {
+    position: relative;
+
+}
+
+.botonDesplegable {
+    width: 100%;
+    border: 2px solid #9bd4ea;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* Separa el texto de la flecha */
+}
+
+.listaOpciones {
+    position: absolute;
+    /* Hace que la lista flote encima */
+    list-style: none;
+    z-index: 10;
+    /*por encima de todoo */
+}
+
+.opcion {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    background-color: #f3e5f5;
+}
+
+.seleccionada {
+    background-color: #bee7c8;
+    color: #04a93b;
+}
+
+.informacion {
+    background-color: #bff8d49d;
+    padding: 15px;
+
+}
+
+.informacion h2 {
+    font-size: 18px;
+    color: #6a1b9a;
+}
